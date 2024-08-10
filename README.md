@@ -1,5 +1,5 @@
 # Mastering Data Structures and Algorithms using C and C++
-This repository holds the various files nd projects made by me during the completion of my course - 
+This repository holds the various files and projects made by me during the completion of my course - 
 
     Platform: Udemy
     Course: Mastering Data Structures and Algorithms using C and C++ 
@@ -22,4 +22,4 @@ __See me on LinkedIn :__ [Link to my LinkedIn ID](https://www.linkedin.com/in/kh
   - Graphs
   - Hashing Technique
 
-<img src="DSA Image.jpeg" alt="DSA Course" height="250">
+<img src="DSA Images.jpeg" alt="DSA Course" height="250">
