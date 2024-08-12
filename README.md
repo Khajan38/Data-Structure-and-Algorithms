@@ -2,7 +2,7 @@
   
 This branch holds the various basics and applications that use Recursion to be solved.  
 
-<img src="Recursion.jpeg" alt="DSA Course" height="250">  
+<img src="Array.jpeg" alt="DSA Course" height="250">  
 
 __See me on LinkedIn :__ [Link to my LinkedIn ID](https://www.linkedin.com/in/khajanbhatt/)
     
