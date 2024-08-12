@@ -1,25 +1,27 @@
-# Mastering Data Structures and Algorithms using C and C++
-This repository holds the various files and projects made by me during the completion of my course - 
+# Recursion and its Applications
+  
+This branch holds the various basics and applications that use Recursion to be solved.  
 
-    Platform: Udemy
-    Course: Mastering Data Structures and Algorithms using C and C++ 
-    Lecturer: Abdul Bari, Professional Programmer and Educator at Udemy 
-__Find this course at :__ [Udemy Courses](https://www.udemy.com/course/datastructurescncpp/)
+<img src="Recursion.jpeg" alt="DSA Course" height="250">  
 
 __See me on LinkedIn :__ [Link to my LinkedIn ID](https://www.linkedin.com/in/khajanbhatt/)
     
-# Topics Covered:
-  - C++ Basics and 
-  - Recursion
-  - Arrays Representation
-  - Array ADT
-  - Linked List
-  - Stack
-  - Queues
-  - Trees
-  - Binary Search Tree
-  - AVL Trees
-  - Graphs
-  - Hashing Technique
-
-<img src="DSA Images.jpeg" alt="DSA Course" height="250">
+## Topics Covered
+  - Global, Local and Static Variables in Recursion
+  - Types of Recursions 
+    - Tail Recursion - Linear
+    - Head Recursion - Linear
+    - Tree Resursion - Non-Optimised and Optimised
+    - Indirect Recursion
+    - Nested Recursion
+  
+## Applications Solved
+  - Decimal to Binary Converter
+  - Sum and Product of Whole Numbers
+  - Sum and Product of Array Elements
+  - Exponent - O(n) and O(log(n)) approaches
+  - Fabonacci Series
+  - Pascal Triangle and Combinations
+  - Taylor Series of e - with and without Horner's Rule
+  - Find Snake Questions
+  - Tower Of Hanoi - Normal and Practical Implementations using Vector
