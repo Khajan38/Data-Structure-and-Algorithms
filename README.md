@@ -1,6 +1,6 @@
 # Recursion and its Applications
   
-This branch holds the various basics and applications that expolres the domain of Arrays to be solved.  
+This branch holds the various basics and applications that expolres the Basic Mathematics to be used as a part of huge algorithms.  
 
 <img src="Array.jpeg" alt="DSA Course" height="250">  
 
