@@ -12,6 +12,14 @@ __See me on LinkedIn :__ [Link to my LinkedIn ID](https://www.linkedin.com/in/kh
   - Declarations and Initializations
   - Dynamic Arrays and Resizing
   - Array Abstract Data Type
+  - Sorting - Selection, Bubble, Insertion, Merge, Quick
+  - Searching - Linear, Binary
+  - Merging and Shifiting all elements less than n left
+  - Rotation - Brute Force, Alternate Array, Reversal
+  - Subarrays Sum - Brute Force, Hashing, Two Pointer, Kadane's Algorithm
+  - Dutch National Flag Algorithm - Three Pointer Approach
+  - Moorey's Voting Algorithm - Majority Element
+  - Bit Manipulation - XOR, AND, OR, Left and Right Shift
   
 ## Array Abstract Data Type
   - Data Members:
