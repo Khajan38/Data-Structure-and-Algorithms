@@ -29,16 +29,13 @@ int maxSubarraySum_2(vector <int> &nums) {
 }
 
 //Kadane's Algorithm -> Time : O(n), Space : O(1)
-int maxSubarraySum_3(vector <int> &nums){
-     int maxi {INT_MIN}, size = nums.size(), sum = 0;
-     for (int i = 0; i < size; i++) {
-          sum += nums[i];
-          if (sum > maxi) 
-               maxi = sum;
-          if (sum < 0)
-               sum = 0;
+int maxSubarraySum_3(vector<int>& nums) {
+     int max_ending_here {nums[0]}, max_so_far {nums[0]}, size = nums.size();
+     for (int i = 1; i < size; i++){
+          max_ending_here = max(nums[i], max_ending_here + nums[i]);
+          max_so_far = max(max_so_far, max_ending_here);
      }
-     return maxi;
+     return max_so_far;
 }
 
 int main(){
