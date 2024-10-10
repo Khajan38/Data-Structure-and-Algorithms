@@ -1,5 +1,5 @@
 #pragma once
-#include "Singly_Linked_List_ADT.c"
+#include "ADT.c"
 
 void display (ListNode * head){
      printf("\nLinked List : ");
@@ -34,4 +34,13 @@ int middle2 (ListNode * head){
           fast = fast->next->next;
      }
      return slow->val;
+}
+
+int totalLength (ListNode * head){
+     int length = 0;
+     while (head != NULL) {
+          ++length;
+          head = head->next;
+     }
+     return length;
 }

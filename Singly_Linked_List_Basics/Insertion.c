@@ -1,12 +1,17 @@
 #pragma once
-#include "Singly_Linked_List_ADT.c"
+#include "ADT.c"
 
 ListNode * insertion (ListNode * head, int element, int position){
      int count = 0;
+     if (linkedListCount == linkedListCapacity){
+          printf("\nOverflow...");
+          return head;
+     }
      ListNode * ele = (ListNode *) malloc (sizeof(ListNode)), * returnHead = head;
      ele->val = element;
      if (position == 1){
           ele->next = head;
+          ++linkedListCount;
           return ele;
      }
      while (head != NULL){
@@ -14,6 +19,7 @@ ListNode * insertion (ListNode * head, int element, int position){
           if (count == position - 1){
                ele->next = head->next;
                head->next = ele;
+               ++linkedListCount;
                return returnHead;
           }
           head = head->next;
@@ -23,23 +29,37 @@ ListNode * insertion (ListNode * head, int element, int position){
 }
 
 ListNode * insertionAtBegin (ListNode * head, int element){
+     if (linkedListCount == linkedListCapacity){
+          printf("\nOverflow...");
+          return head;
+     }
      ListNode * ele = (ListNode *) malloc (sizeof(ListNode));
      ele->val = element;
      ele->next = head;
+     ++linkedListCount;
      return ele;
 }
 
 ListNode * insertionAtEnd (ListNode * head, int element){
+     if (linkedListCount == linkedListCapacity){
+          printf("\nOverflow...");
+          return head;
+     }
      ListNode * ele = (ListNode *) malloc (sizeof(ListNode)), * returnHead = head;
      ele->val = element;
      ele->next = NULL;
      if (head == NULL) return ele;
      while (head->next != NULL) head = head->next;
      head->next = ele;
+     ++linkedListCount;
      return returnHead;
 }
 
 ListNode * insertionAtMiddle (ListNode * head, int element){
+     if (linkedListCount == linkedListCapacity){
+          printf("\nOverflow...");
+          return head;
+     }
      ListNode * ele = (ListNode *) malloc (sizeof(ListNode)), * returnHead = head;
      ele->val = element;
      if (head == NULL) return ele;
@@ -50,5 +70,6 @@ ListNode * insertionAtMiddle (ListNode * head, int element){
      }
      ele->next = slow->next;
      slow->next = ele;
+     ++linkedListCount;
      return returnHead;
 }

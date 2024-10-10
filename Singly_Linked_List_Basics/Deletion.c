@@ -1,5 +1,5 @@
 #pragma once
-#include "Singly_Linked_List_ADT.c"
+#include "ADT.c"
 
 ListNode * deletion (ListNode * head, int element){
      if (head == NULL){
@@ -10,6 +10,7 @@ ListNode * deletion (ListNode * head, int element){
      if (head->val == element){
           returnHead = head->next;
           free(head);
+          --linkedListCount;
           return returnHead;
      }
      while (head->next != NULL){
@@ -17,6 +18,7 @@ ListNode * deletion (ListNode * head, int element){
                ListNode * temp = head->next;
                head->next = head->next->next;
                free(temp);
+               --linkedListCount;
                return returnHead;
           }
           head = head->next;
@@ -32,6 +34,7 @@ ListNode * deleteAtHead (ListNode * head){
      }
      ListNode * returnHead = head->next;
      free(head);
+     --linkedListCount;
      return returnHead;
 }
 
@@ -42,6 +45,7 @@ ListNode * deleteAtEnd (ListNode * head){
      }
      if (head->next == NULL) {
           free(head);
+          --linkedListCount;
           return NULL;
      }
      ListNode * returnHead = head;
@@ -49,6 +53,7 @@ ListNode * deleteAtEnd (ListNode * head){
      ListNode * temp = head->next;
      head->next = NULL;
      free(temp);
+     --linkedListCount;
      return returnHead;
 }
 
@@ -59,6 +64,7 @@ ListNode * deleteAtMiddle (ListNode * head){
      }
      if (head->next == NULL){
           free(head);
+          --linkedListCount;
           return NULL;
      }
      ListNode * fast = head, * slow = head;
@@ -69,5 +75,6 @@ ListNode * deleteAtMiddle (ListNode * head){
      fast = slow->next;
      slow->next = fast->next;
      free(fast);
+     --linkedListCount;
      return head;
 }
